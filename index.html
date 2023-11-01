@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+<div id="timer">
+    <div id="minutes">00</div>:
+    <div id="seconds">00</div>
+</div>
+<div>
+    <label>
+        No. of exercises: <input id="exercises-input" type="number" min="1">
+    </label>
+</div>
+<br>
+<div>
+    <label>
+        No. of Sets: <input id="sets-input" type="number" min="1">
+    </label>
+</div>
+<br>
+<div>
+    <label>
+        Exercise Countdown Timer:<br>
+        <input id="exercise-min-input" type="number" min="0"> : <input id="exercise-sec-input" type="number" min="0">
+    </label>
+</div>
+<br>
+<div>
+    <label>
+        Rest Countdown Timer:<br>
+        <input id="rest-min-input" type="number" min="0"> : <input id="rest-sec-input" type="number" min="0">
+    </label>
+</div>
+<br>
+<button onclick="startWorkout()">Start Workout</button>
+</body>
+</html>
